@@ -1,0 +1,23 @@
+name: PraceVault
+version: 1.0.0
+main: pl.przyklad.prace.PracePlugin
+api-version: 1.21
+author: Ty
+depend: [Vault]
+softdepend: [PlaceholderAPI]
+
+commands:
+  prace:
+    description: Otwiera GUI z pracami / zarzadzanie strefami
+    usage: /prace [zone create|remove|list ...]
+  pracewand:
+    description: Daje narzedzie do zaznaczania strefy danej pracy
+    usage: /pracewand <gornik|drwal|farmer|rybak>
+
+permissions:
+  prace.admin:
+    description: Dostep do wandu i zarzadzania strefami
+    default: op
+  prace.bypass:
+    description: Omija ograniczenia kopania/rabania/zbierania
+    default: op
